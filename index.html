@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Matej's Test Page</title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="skeleton/normalize.css">
+  <link rel="stylesheet" href="skeleton/skeleton.css">
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<link rel="icon" type="image/png" href="https://branch.io/img/press/kit/badge-black.png" />
+
+  <script src="modernizr.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent".split(" "), 0);
+    branch.setBranchViewData({
+      data: {
+        '$ios_deeplink_path': 'open/item/1234'
+      }
+    }, function(err) {
+      console.log('Error from setBranchViewData: ' + err);
+    });
+
+    console.log('Called branch.setBranchViewData. branch._branchViewData = ' + JSON.stringify(branch._branchViewData));
+
+    branch.init('key_live_hkDytPACtipny3N9XmnbZlapBDdj4WIL', {make_new_link: false}, function(error, data) {
+        console.log(data);
+    });
+
+
+    // $.ajax({
+    //   url: 'https://app.link/_r',
+    //   data: {},
+    //   dataType: "jsonp",
+    //   success: function(response) {
+    //     var referrer = document.referrer;
+    //     $('#cookie_id').append(response);
+    //     $('#referrer').append(referrer);
+    //   },
+    //   error: function() {
+    //     $('#cookie_id').append("error");
+    //   }
+    // });
+
+    // var referrer = document.referrer;
+    // $('#referrer').append(referrer);
+
+  </script>
+</head>
+<body style="overflow: scroll;">
+  <div class="section hero">
+    <div class="container">
+      <div class="row">
+        <div class="one-half column">
+          <h4 class="hero-heading" id="cookie_id">Cookie ID: </h4>
+          <h4 class="hero-heading" id="referrer">Referrer: </h4>
+          <h4 class="hero-heading" id="safari">Safari?: </h4>
+          <h4 class="hero-heading" id="safari_11_or_greater">Safari 11+?: </h4>
+        </div>
+        <div class="one-half column">
+          <div class="one-half column" id="results">
+            <a href="https://link.glovoapp.com/e/q6IyFcJrH3?$ios_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F&$desktop_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F">Test 1</a>
+            <br/>
+            <a href="https://branch.link/e/397aZdCrH3?$ios_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F&$desktop_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F">Test 2</a>
+            <br/>
+            <a href="https://cdl.booksy.com/e/MfgEUozrH3?$ios_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F&$desktop_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F">Test 3</a>
+            <br/>
+            <a href="https://b.gett.com/e/N8Jo2URrH3?$ios_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F&$desktop_url=https%3A%2F%2Fbelfius-demo.herokuapp.com%2F">Test 4</a>
+            <br/>
+            <a href="https://emailmetacurator.app.link/e/dZKxEqS9K3">Outbound 1</a>
+            <br/>
+            <a href="https://emailmetacurator.app.link/e/hz8eDlV9K3">Outbound 2</a>
+            <br/>
+            <a href="https://emailmetacurator.app.link/e/w6Lsg8X9K3">Outbound 3</a>
+            <br/>
+            <a href="https://emailmetacurator.app.link/e/Q60e8NZ9K3">Outbound 4</a>
+            <br/>
+            <a href="https://link.glovoapp.com/e/q6IyFcJrH3?$ios_url=https%3A%2F%2Fwww.glovoapp.com&$desktop_url=https%3A%2F%2Fwww.glovoapp.com">Another Test 1</a>
+            <br/>
+            <a href="https://branch.link/e/397aZdCrH3?$ios_url=https%3A%2F%2Fwww.branch.io&$desktop_url=https%3A%2F%2Fwww.branch.io">Another Test 2</a>
+            <br/>
+            <a href="https://cdl.booksy.com/e/MfgEUozrH3?$ios_url=https%3A%2F%2Fwww.booksy.com&$desktop_url=https%3A%2F%2Fwww.booksy.com">Another Test 3</a>
+            <br/>
+            <a href="https://b.gett.com/e/N8Jo2URrH3?$ios_url=https%3A%2F%2Fwww.gett.com&$desktop_url=https%3A%2F%2Fwww.gett.com">Another Test 4</a>
+            <br/>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  var ua = navigator.userAgent;
+  var is_safari = !!/^((?!chrome|android|crios|fxios).)*safari/i.test(ua);
+  $('#safari').append(is_safari.toString());
+
+  var isSafari = !!/^((?!chrome|android|crios|fxios).)*safari/i.test(ua);
+  var is_safari_11 = false;
+
+  if (isSafari) {
+    var match = /version\/([^ ]*)/i.exec(ua);
+    if (match && match[1]) {
+      try {
+              var version = parseFloat(match[1]);
+              if (version >= 11) {
+                  is_safari_11 = true;
+                  $('#safari_11_or_greater').append(is_safari_11.toString());
+              }
+          } catch (e) {
+              is_safari_11 = false;
+              $('#safari_11_or_greater').append(is_safari_11.toString());
+          }
+      } else {
+      $('#safari_11_or_greater').append(is_safari_11.toString());
+    }
+  } else {
+    $('#safari_11_or_greater').append(is_safari_11.toString());
+  }
+</script>
+</body>
+</html>
